@@ -10,3 +10,4 @@ Build using Xcode
 1. mkdir build && cd build
 2. cmake .. -G Xcode
 3. open *.xcodeproj
+4. Run target antlr-cpp-test
