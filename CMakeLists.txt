@@ -36,7 +36,7 @@ antlr_target(SampleGrammarLexer TLexer.g4 LEXER
 antlr_target(SampleGrammarParser TParser.g4 PARSER
              PACKAGE antlrcpptest
              DEPENDS_ANTLR SampleGrammarLexer
-             COMPILE_FLAGS -lib ${ANTLR_SampleGrammarLexer_OUTPUT_DIR})
+             COMPILE_FLAGS -lib ${ANTLR_SampleGrammarLexer_OUTPUT_DIR} VISITOR LISTENER)
 
 # include generated files in project environment
 include_directories(${ANTLR_SampleGrammarLexer_OUTPUT_DIR})
